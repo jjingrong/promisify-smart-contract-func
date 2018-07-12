@@ -15,10 +15,23 @@ This package allows you to get around the callback requirements by wrapping your
 
 This allows you to avoid what Javascript developers like to call as *callback hell*
 
+## Installation
+
+#### Run
+
+```bash
+npm install --save promisify-smart-contract-func
+```
+
+## Example usage
+```javascript
+import promisifySmartContractFunc from 'promisify-smart-contract-func';
+```
+
 ### Using With Parameters
 
 #### With `promisifySmartContractFunc`
-```
+```javascript
 import promisifySmartContractFunc from 'promisify-smart-contract-func';
 .
 .
@@ -44,7 +57,7 @@ try {
 ```
 
 #### Without `promisifySmartContractFunc`
-```
+```javascript
 web3.eth.getBalance(address, (error1, balance) => {
   contract.tokensDeposited(contractAddress, (error2, approveTransactionHash) => {
     if (approveTransactionHash) {
@@ -70,7 +83,7 @@ web3.eth.getBalance(address, (error1, balance) => {
 ## Using Without Parameters
 
 #### With `promisifySmartContractFunc`
-```
+```javascript
 import promisifySmartContractFunc from 'promisify-smart-contract-func';
 .
 .
@@ -86,7 +99,7 @@ try {
 
 
 #### Without `promisifySmartContractFunc`
-```
+```javascript
 contract.tokensDeposited((error, value) => {
   if (value) {
     // Do something ...

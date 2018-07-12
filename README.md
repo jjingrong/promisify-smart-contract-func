@@ -17,29 +17,7 @@ This allows you to avoid what Javascript developers like to call as *callback he
 
 ### Using With Parameters
 
-Before
-```
-web3.eth.getBalance(address, (error1, balance) => {
-  contract.tokensDeposited(contractAddress, (error2, approveTransactionHash) => {
-    if (approveTransactionHash) {
-      console.log(balance);
-      console.log(approveTransactionHash);
-      // Do something ...
-    }
-    if (error2) {
-      console.error(error2);
-      throw(error2);
-    }
-  });
-  if (error1) {
-    // Do something ...
-    console.error(error1);
-    throw(error1);
-  }
-});
-
-```
-After
+With `promisifySmartContractFunc`
 ```
 import promisifySmartContractFunc from 'promisify-smart-contract-func';
 .
@@ -65,21 +43,33 @@ try {
 }
 ```
 
-## Using Without Parameters
-
-Before
+Without `promisifySmartContractFunc`
 ```
-contract.tokensDeposited((error, value) => {
-  if (value) {
+web3.eth.getBalance(address, (error1, balance) => {
+  contract.tokensDeposited(contractAddress, (error2, approveTransactionHash) => {
+    if (approveTransactionHash) {
+      console.log(balance);
+      console.log(approveTransactionHash);
+      // Do something ...
+    }
+    if (error2) {
+      console.error(error2);
+      throw(error2);
+    }
+  });
+  if (error1) {
     // Do something ...
-  }
-  if (error) {
-    // Do something ...
+    console.error(error1);
+    throw(error1);
   }
 });
 
 ```
-After
+
+
+## Using Without Parameters
+
+With `promisifySmartContractFunc`
 ```
 import promisifySmartContractFunc from 'promisify-smart-contract-func';
 .
@@ -92,4 +82,18 @@ try {
   console.error(error);
   throw(error);
 }
+```
+
+
+Without `promisifySmartContractFunc`
+```
+contract.tokensDeposited((error, value) => {
+  if (value) {
+    // Do something ...
+  }
+  if (error) {
+    // Do something ...
+  }
+});
+
 ```

@@ -1,5 +1,8 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var promisifySmartContractFunc = function promisifySmartContractFunc(func) {
   for (var _len = arguments.length, additionalParams = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     additionalParams[_key - 1] = arguments[_key];
@@ -16,3 +19,5 @@ var promisifySmartContractFunc = function promisifySmartContractFunc(func) {
     }]));
   });
 };
+
+exports.default = promisifySmartContractFunc;

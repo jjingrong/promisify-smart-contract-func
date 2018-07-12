@@ -17,7 +17,7 @@ This allows you to avoid what Javascript developers like to call as *callback he
 
 ### Using With Parameters
 
-With `promisifySmartContractFunc`
+#### With `promisifySmartContractFunc`
 ```
 import promisifySmartContractFunc from 'promisify-smart-contract-func';
 .
@@ -43,7 +43,7 @@ try {
 }
 ```
 
-Without `promisifySmartContractFunc`
+#### Without `promisifySmartContractFunc`
 ```
 web3.eth.getBalance(address, (error1, balance) => {
   contract.tokensDeposited(contractAddress, (error2, approveTransactionHash) => {
@@ -69,7 +69,7 @@ web3.eth.getBalance(address, (error1, balance) => {
 
 ## Using Without Parameters
 
-With `promisifySmartContractFunc`
+#### With `promisifySmartContractFunc`
 ```
 import promisifySmartContractFunc from 'promisify-smart-contract-func';
 .
@@ -85,7 +85,7 @@ try {
 ```
 
 
-Without `promisifySmartContractFunc`
+#### Without `promisifySmartContractFunc`
 ```
 contract.tokensDeposited((error, value) => {
   if (value) {

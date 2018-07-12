@@ -1,6 +1,6 @@
 {
   "name": "promisify-smart-contract-func",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple npm package to help you Promisify your Web3 calls",
   "main": "index.js",
   "scripts": {

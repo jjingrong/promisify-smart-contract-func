@@ -1,8 +1,8 @@
 {
   "name": "promisify-smart-contract-func",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple npm package to help you Promisify your Web3 calls",
-  "main": "index.js",
+  "main": "dist.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
     "url": "git+https://github.com/rate-engineering/promisify-smart-contract-func.git"
   },
   "keywords": [
+    "ethereum",
     "web3js",
     "js"
   ],

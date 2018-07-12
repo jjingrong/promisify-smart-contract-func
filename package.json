@@ -1,8 +1,8 @@
 {
   "name": "promisify-smart-contract-func",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple npm package to help you Promisify your Web3 calls",
-  "main": "dist.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

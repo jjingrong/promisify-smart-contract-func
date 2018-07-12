@@ -1,21 +1,18 @@
-/**
- * Helper function to run smart contract functions, or get data from it (ABI layer)
-  * It returns a promise, so you could run use it as it is or wrap it in an async/await function
- * @param {function}          func             Function that has callback signature of web3 function( (error, value) => {...} )
- * @param {additionalParams}  additionalParams Optional Additional Parameters that are passed in
- * @returns {Promise}                          Promise that wraps the function
- */
-const promisifySmartContractFunc = (func, ...additionalParams) => {
+'use strict';
+
+var promisifySmartContractFunc = function promisifySmartContractFunc(func) {
+  for (var _len = arguments.length, additionalParams = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    additionalParams[_key - 1] = arguments[_key];
+  }
+
   if (typeof func !== 'function') return null;
-  return new Promise((resolve, reject) => {
+  return new Promise(function (resolve, reject) {
     if (typeof func !== 'function') reject();
-    func(...additionalParams, (e, v) => {
+    func.apply(undefined, additionalParams.concat([function (e, v) {
       if (e) reject(e);
       if (typeof v !== 'undefined') {
         resolve(v);
       }
-    });
+    }]));
   });
 };
-
-export default promisifySmartContractFunc;

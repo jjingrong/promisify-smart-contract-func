@@ -1,4 +1,11 @@
-# promisify-smart-contract-func
+# promisify-smart-contract-func 
+[![npm version](https://badge.fury.io/js/promisify-smart-contract-func.svg)](https://badge.fury.io/js/promisify-smart-contract-func)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 
+[![HitCount](http://hits.dwyl.com/rate-engineering/promisify-smart-contract-func.svg)](http://hits.dwyl.com/rate-engineering/promisify-smart-contract-func)
+
+
+[![NPM](https://nodei.co/npm/promisify-smart-contract-func.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/promisify-smart-contract-func/)
+
 A simple npm package to help you Promisify your Web3 calls that requires a callback
 
 ## What is this for

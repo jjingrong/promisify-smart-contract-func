@@ -1,7 +1,8 @@
 # promisify-smart-contract-func 
 [![npm version](https://badge.fury.io/js/promisify-smart-contract-func.svg)](https://badge.fury.io/js/promisify-smart-contract-func)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 
+[![npm](https://img.shields.io/npm/dt/promisify-smart-contract-func.svg)](https://www.npmjs.com/package/promisify-smart-contract-func)
 [![HitCount](http://hits.dwyl.com/rate-engineering/promisify-smart-contract-func.svg)](http://hits.dwyl.com/rate-engineering/promisify-smart-contract-func)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues) 
 
 
 [![NPM](https://nodei.co/npm/promisify-smart-contract-func.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/promisify-smart-contract-func/)

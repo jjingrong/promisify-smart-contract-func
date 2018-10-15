@@ -36,6 +36,11 @@ npm install --save promisify-smart-contract-func
 import promisifySmartContractFunc from 'promisify-smart-contract-func';
 ```
 
+Reminder - the parameters that `promisifySmartContractFunc` take are 
+```
+<function name>, <parameter 1>, <parameter 2>, ......
+```
+
 ### Using With Parameters
 
 #### With `promisifySmartContractFunc`
